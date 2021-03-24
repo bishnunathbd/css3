@@ -225,3 +225,24 @@ body{
   background-color: red;
   width: 500px;
 }
+
+/* create simple cricket match with transform & transition */
+.bat{
+  transition: transform 0.2s ease-in-out;
+}
+.ball{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  left: 400px;
+  transition: transform 2s ease-in-out 0.2s;
+}
+.field:hover .bat{
+  transform: rotate(-60deg);
+  transform-origin: 100% 0%;
+}
+.field:hover .ball{
+  transform: translate(700px, -100px);
+}
