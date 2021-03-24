@@ -112,3 +112,29 @@ body{
 #sixth-box{
   background-color: goldenrod;
 }
+
+/* css overflow */
+#overflow-box{
+  width: 400px;
+  height: 200px;
+  border: 3px solid tomato;
+  /* overflow: hidden; */
+  overflow: scroll;
+}
+#overflow-box2{
+  width: 400px;
+  height: 200px;
+  border: 3px solid cyan;
+}
+
+/* image */
+.img-section{
+  height: 600px;
+}
+.img-box{
+  border: 3px solid purple;
+  width: 40%;
+  float: left;
+  margin-left: 3%;
+  padding-left: 2%;
+}
