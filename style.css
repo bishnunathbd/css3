@@ -73,3 +73,39 @@ body{
   counter-increment: section;
   content: "Product " counter(section) ": ";
 }
+
+
+/* positon */
+.position-section{
+  background-color: lightblue;
+  height: 800px;
+}
+.position-box{
+  width: 100px;
+  height: 100px;
+  border: 2px solid rebeccapurple;
+  font-size: 20px;
+  text-align: center;
+}
+#first-box{
+  background-color: rosybrown;
+}
+#second-box{
+  background-color: seagreen;
+  position: relative;
+  left: 100px;
+}
+#third-box{
+  background-color: red;
+}
+#fourth-box{
+  background-color: yellowgreen;
+  position: absolute;
+  left: 200px;
+}
+#fifth-box{
+  background-color: lightsalmon;
+}
+#sixth-box{
+  background-color: goldenrod;
+}
