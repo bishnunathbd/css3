@@ -246,3 +246,40 @@ body{
 .field:hover .ball{
   transform: translate(700px, -100px);
 }
+
+/* css animation */
+@keyframes slideIn{
+  0%{
+    left: 0;
+    top: 0;
+  }
+  50%{
+    left: 400px;
+    top: 100px;
+    background-color: red;
+  }
+  100%{
+    left: 800px;
+    top: 0;
+    background-color: yellow;
+  }
+}
+.animation-box{
+  min-width: 800px;
+  height: 200px;
+  background-color: lightskyblue;
+  position: relative;
+}
+.ball-animation{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: yellow;
+  position: absolute;
+}
+.animation-box:hover .ball-animation{
+  animation: slideIn 3s ease-in-out 1s infinite alternate;
+}
+.animation-section{
+  height: 300px;
+}
