@@ -283,3 +283,35 @@ body{
 .animation-section{
   height: 300px;
 }
+
+/* css media query */
+.media-container{
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.mobile{
+  width: 350px;
+  border: 3px solid gray;
+  border-radius: 30px;
+  margin: 10px;
+}
+.mobile img{
+  width: 100%;
+}
+@media (max-width: 760px){
+  .media-container{
+    flex-direction: column;
+  }
+  .media-container .mobile{
+    background-color: rosybrown;
+  }
+}
+@media (min-width: 1200px){
+  .media-container .mobile{
+    background-color: skyblue;
+  }
+}
+.media-query-section{
+  height: 900px;
+}
