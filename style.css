@@ -1,0 +1,75 @@
+section{
+  border: 2px solid green;
+  height: 500px;
+}
+/* float: left */
+.float-box{
+  border: 1px solid blue;
+  width: 25%;
+  float: left;
+  margin-left: 2%;
+  padding-left: 2%;
+}
+/* display: inline-block */
+.display-box{
+  border: 1px solid blue;
+  width: 25%;
+  display: inline-block;
+}
+
+.pseudo-section{
+  height: 1200px;
+}
+/* :hover */
+.hover-h4:hover{
+  background-color: blueviolet;
+  color: wheat;
+  font-size: 20px;
+  width: 50%;
+}
+/* :focus */
+input:focus{
+  color: brown;
+  font-size: 16px;
+  font-weight: 700;
+}
+/* :visited */
+a:visited{
+  color: red;
+}
+
+/* :first-child / :last-child / :nth-child() */
+.digit:first-child{
+  font-size: 24px;
+  font-weight: 700;
+  color: brown;
+}
+.digit:last-child{
+  font-size: 24px;
+  font-weight: 700;
+  color: goldenrod;
+}
+.digit:nth-child(2n){
+  background-color: gray;
+}
+/* pseudo element = ::before / ::after */
+.name::before{
+  content: "Hello ";
+  background-color: goldenrod;
+  color: white;
+}
+.name::after{
+  content: " What's up";
+  background-color: blueviolet;
+  color: bisque;
+  font-weight: 700;
+  font-size: 20px;
+}
+/* counter */
+body{
+  counter-reset: section;
+}
+.laptop::before{
+  counter-increment: section;
+  content: "Product " counter(section) ": ";
+}
