@@ -132,11 +132,11 @@ body{
   background-color: thistle;
   position: absolute;
   top: 20px;
-  z-index: 2;
+  /* z-index: 2; */
 }
 .more-position-box-1{
   background-color: teal;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 /* css overflow */
